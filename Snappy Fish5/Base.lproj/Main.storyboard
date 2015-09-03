@@ -26,19 +26,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Underwater Adventure Gone Wild" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Die-TZ-iap">
-                                <rect key="frame" x="16" y="229" width="343" height="45"/>
+                                <rect key="frame" x="16" y="279" width="343" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.95770923620000004" blue="0.19247743940000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the screen to swim through the pipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sA8-GZ-mwz">
-                                <rect key="frame" x="16" y="321" width="343" height="36"/>
+                                <rect key="frame" x="16" y="356" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="1" green="0.95770923620000004" blue="0.19247743940000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-85-f8f">
-                                <rect key="frame" x="111" y="457" width="160" height="70"/>
+                                <rect key="frame" x="107" y="464" width="160" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Play Game">
                                     <color key="titleColor" red="0.19131490498539805" green="1" blue="0.14773902643848014" alpha="1" colorSpace="calibratedRGB"/>
@@ -48,10 +48,19 @@
                                     <segue destination="pzD-aZ-CEg" kind="show" id="2HO-aF-Y7d"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Uw-0a-8ec">
+                                <rect key="frame" x="101" y="177" width="164" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.95770923620000004" blue="0.19247743940000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="HighScore" destination="2Uw-0a-8ec" id="dPQ-TX-vhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,12 +81,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crabs.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tkb-JC-jZP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YR-lQ-s2w">
-                                <rect key="frame" x="144" y="53" width="75" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4JC-3H-ILv">
                                 <rect key="frame" x="0.0" y="1" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.068915584085617709" green="0.74346998397166209" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -87,10 +90,7 @@
                                 <color key="backgroundColor" red="0.93858356430000001" green="0.93377364169999999" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="col.png" translatesAutoresizingMaskIntoConstraints="NO" id="1ug-CW-hPW">
-                                <rect key="frame" x="270" y="397" width="60" height="562"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold-fish.png" translatesAutoresizingMaskIntoConstraints="NO" id="NBw-iH-zvl">
-                                <rect key="frame" x="50" y="307" width="66" height="61"/>
+                                <rect key="frame" x="315" y="397" width="60" height="562"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5W-YJ-aeP">
                                 <rect key="frame" x="123" y="496" width="129" height="67"/>
@@ -104,7 +104,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="col.png" translatesAutoresizingMaskIntoConstraints="NO" id="xvZ-hR-ave">
-                                <rect key="frame" x="270" y="-290" width="60" height="562"/>
+                                <rect key="frame" x="315" y="-290" width="60" height="562"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YR-lQ-s2w">
+                                <rect key="frame" x="199" y="53" width="75" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" red="0.19131490500000001" green="1" blue="0.1477390264" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gold-fish.png" translatesAutoresizingMaskIntoConstraints="NO" id="NBw-iH-zvl">
+                                <rect key="frame" x="46" y="298" width="66" height="61"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

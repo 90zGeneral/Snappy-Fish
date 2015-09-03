@@ -15,6 +15,11 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    //Setting up the high score
+    HighScoreNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreUpdated"];
+    HighScore.text = [NSString stringWithFormat:@"High Score: %li", (long)HighScoreNumber];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }

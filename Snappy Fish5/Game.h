@@ -15,6 +15,9 @@ int randTopPipePos;
 int randBottomPipePos;
 int scoreNumber;
 
+//Set variable for high score. Use NS instead of int to prevent connectivity errors with the other view
+NSInteger newHighScore;
+
 @interface Game : UIViewController {
     
     //Decalre all the visuals for the game as objects

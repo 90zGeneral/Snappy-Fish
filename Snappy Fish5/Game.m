@@ -124,12 +124,14 @@
     randBottomPipePos = randTopPipePos + 690; //This controls the amount of space btw the 2 pipes. The bigger the number, the wider the space
     
     
+/*
     //Print figures to the console
     NSLog(@"%i", randTopPipePos);
     NSLog(@"%i", randBottomPipePos);
+*/
     
     
-    //The x cordinates are the same so the top and bottom pipes can be in line everytime
+    //The x coordinates are the same so the top and bottom pipes can be in line everytime
     topPipe.center = CGPointMake(375, randTopPipePos);
     bottomPipe.center = CGPointMake(375, randBottomPipePos);
     
@@ -170,10 +172,18 @@
     
     [bubble stopAnimating];
     
+    //To determine whether to update the high score after each game
+    if (scoreNumber > newHighScore) {
+        [[NSUserDefaults standardUserDefaults] setInteger:scoreNumber forKey:@"HighScoreUpdated"];
+    }
+    
 }
 
 //Similar to jQuery window onlaod function
 - (void)viewDidLoad {
+    
+    //To set the high score when view loads
+    newHighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreUpdated"];
     
     //Hide top and bottom pipes
     topPipe.hidden = YES;
